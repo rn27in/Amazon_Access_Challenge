@@ -1,0 +1,7 @@
+##Training###############################
+
+vw /home/ubuntu/linux/Work/Deep_Learning/Amazon_Access/VW_Sets/python_to_vw_train.vw -c -k -f /home/ubuntu/linux/Work/Deep_Learning/Amazon_Access/Models/access_train.model.vw --loss_function logistic --passes 10
+
+######################Testing############
+
+vw -t -d /home/ubuntu/linux/Work/Deep_Learning/Amazon_Access/VW_Sets/python_to_vw_test.vw -i /home/ubuntu/linux/Work/Deep_Learning/Amazon_Access/Models/access_train.model.vw -p pred_access_final.txt
